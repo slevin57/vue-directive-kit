@@ -7,6 +7,7 @@ import App from "./App.vue";
 // 整体引入
 import pgkName from "../packages/index";;
 Vue.use(pgkName);
+var b
 
 
 new Vue({
