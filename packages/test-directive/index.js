@@ -7,7 +7,6 @@ const install = Vue => {
 
 if (typeof window !== "undefined" && window.Vue) {
     window.Vue.use({ install })
-    var b
 }
 
 export default {
