@@ -1,19 +1,53 @@
 # vue-directive-kit
 
-> A collection of vue directives.
+![banner](examples/assets/logo.png)
 
-## Build Setup
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+TODO: Put more badges here.
 
-``` bash
-# install dependencies
-npm install
+> A collection of vue directive.
 
-# serve with hot reload at localhost:8080
-npm run dev
+TODO: Fill out this long description.
 
-# build for production with minification
-npm run build
+## Table of Contents
+
+- [Security](#security)
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Security
+
+## Background
+
+## Install
+
+```
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-A collection of vue directives.
+## Usage
+
+```
+```
+
+## API
+
+## Maintainers
+
+[@guthub handler](https://github.com/guthub handler)
+
+## Contributing
+
+See [the contributing file](contributing.md)!
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2019 slevin
