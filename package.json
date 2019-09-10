@@ -5,6 +5,21 @@
     "author": "slevin <575720013@qq.com>",
     "license": "MIT",
     "private": false,
+    "keywords":[
+        "vue",
+        "vue-directive-kit",
+        "vue-directive",
+        "vue-infinite-scroll",
+        "vue-img-lazyload",
+        "vue-img-placeholder"
+    ],
+    "files":[
+        "dist/vue-directive-kit.js",
+        "package.json",
+        "README.md",
+        "yarn.lock"
+    ],
+    "main":"dist/vue-directive-kit.js",
     "scripts": {
         "dev": "cross-env NODE_ENV=development webpack-dev-server --env --open --hot",
         "build": "cross-env NODE_ENV=production webpack --env --progress --hide-modules",
