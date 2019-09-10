@@ -19,7 +19,7 @@
         "README.md",
         "yarn.lock"
     ],
-    "main":"dist/vue-directive-kit.js",
+    "main":"lib/vue-directive-kit.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/slevin57/vue-directive-kit.git"
