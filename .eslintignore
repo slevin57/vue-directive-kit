@@ -1,0 +1,11 @@
+package.json
+package-lock.json
+yarn.lock
+.eslintrc.js
+.gitignore
+.npmignore
+# 忽略有所md文件
+assets/
+*.md
+dist/
+lib/

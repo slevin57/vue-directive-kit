@@ -2,7 +2,7 @@
  * @Desc 简洁版 防抖与节流
  */
 
-const _ = {}
+const _ = {};
 
 // Similar to ES6's rest param (http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html)
 // This accumulates the arguments passed into an array, after a given index.
@@ -121,4 +121,4 @@ _.throttle = function (func, wait, options) {
     return throttled;
 };
 
-module.exports = _
+module.exports = _;

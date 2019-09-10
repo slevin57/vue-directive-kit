@@ -2,9 +2,11 @@
     <div id="app">
         <img src="./assets/logo.png">
         <h1 v-test-directive>{{ msg }}</h1>
-        <h2 v-infinite-scroll="obj">h2</h2>
         <div v-img-placeholder="'http://api.dujin.org/bing/1920.php'">
-            <img src="http://api.dujin.org/bing/1920.php" alt="" class="src">
+            <img
+                src="http://api.dujin.org/bing/1920.php"
+                alt=""
+                class="src">
         </div>
         <div class="img-lazyload">
             <img v-img-lazyload="'https://resources.laihua.com/2018-10-31/5dedfb80-dcbc-11e8-a1b9-67cb886d5d62.png'" alt="">
@@ -14,21 +16,15 @@
 
 <script>
 export default {
-    name: 'app',
+    name: "App",
+    directives:{
+    },
     data() {
         return {
-            msg: 'Welcome to Your Vue.js App',
-            obj:{
-                loadFn: this.ttt
-            }
-        }
-    },
-    methods:{
-        ttt(){
-            console.log(`1:`,1);
-        }
+            msg: "Welcome to Your Vue.js App"
+        };
     }
-}
+};
 </script>
 
 <style lang="scss">
