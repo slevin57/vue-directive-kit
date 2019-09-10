@@ -41,7 +41,7 @@
         }
     },
     "lint-staged": {
-        "/*.{js,vue}": [
+        "*.{js,vue}": [
             "echo 'lint-staged====>'",
             "eslint --fix",
             "git add"

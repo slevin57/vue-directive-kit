@@ -5,8 +5,8 @@ import App from "./App.vue";
 // import pgkName from '../packages/test-directive/index'
 
 // 整体引入
-import pgkName from "../packages/index";;
-Vue.use(pgkName)
+import pgkName from "../packages/index";
+Vue.use(pgkName);
 
 
 new Vue({
