@@ -5,8 +5,8 @@ module.exports = env => {
     return {
         entry: env.lib ? './packages/index.js' : './examples/main.js',
         output: {
-            path: path.resolve(__dirname, './dist'),
-            publicPath: '/dist/',
+            path: path.resolve(__dirname, env.lib ? './lib' : './dist'),
+            publicPath: env.lib ? '/lib/' : '/dist/',
             filename: env.lib ? 'vue-directive-kit.js' : 'build.js',
             library: env.lib ? 'vie-directive-kit' : '',
             libraryTarget: env.lib ? 'umd' : 'var',
