@@ -36,8 +36,8 @@
     },
     "husky":{
         "hooks": {
-            "pre-commit": "npm test",
-            "pre-push": "npm test2"
+            "pre-commit": "echo '1111'",
+            "pre-push": "echo '22'"
         }
     },
     "browserslist": [
