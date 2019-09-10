@@ -83,7 +83,7 @@ export default {
 ```
 
 监听指定元素的滚动事件
-```
+```vue
 <template>
     <div>
         <div class="wrapper" ref='wrapper'>
