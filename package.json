@@ -54,6 +54,8 @@
     "not ie <= 8"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^7.1.2",
