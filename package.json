@@ -30,8 +30,8 @@
         "lib": "cross-env NODE_ENV=production webpack --env.lib --progress --hide-modules",
         "lint:all": "eslint --ext .js,.vue '**'",
         "lint:fix": "eslint --fix --ext .js,.vue '**'",
-        "changelog-init": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add",
+        "changelog-init": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add .",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add .",
         "commit": "git cz"
     },
     "dependencies": {
