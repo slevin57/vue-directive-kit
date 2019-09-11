@@ -30,7 +30,7 @@ TODO: Fill out this long description.
 安装
 ```bash
 npm i vue-directive-kit -D
-# yarn add vue-directive-kit
+# yarn add vue-directive-kit -D
 ```
 
 全局注册
