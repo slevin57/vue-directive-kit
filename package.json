@@ -1,7 +1,7 @@
 {
   "name": "vue-directive-kit",
   "description": "A collection of vue directives.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "slevin <575720013@qq.com>",
   "license": "MIT",
   "private": false,
