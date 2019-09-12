@@ -72,6 +72,7 @@
     "conventional-changelog-cli": "^2.0.23",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
+    "doctoc": "^1.4.0",
     "eslint": "^6.3.0",
     "eslint-loader": "^3.0.0",
     "eslint-plugin-vue": "^5.2.3",

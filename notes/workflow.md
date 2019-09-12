@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [开发环境](#%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83)
+- [本地开发及测试npm包](#%e6%9c%ac%e5%9c%b0%e5%bc%80%e5%8f%91%e5%8f%8a%e6%b5%8b%e8%af%95npm%e5%8c%85)
+- [发版](#%e5%8f%91%e7%89%88)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ### 开发环境
 
