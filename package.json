@@ -22,7 +22,7 @@
   "main": "dist/vue-directive-kit.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/slevin57/vue-directive-kit.git"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --env --open --hot",
