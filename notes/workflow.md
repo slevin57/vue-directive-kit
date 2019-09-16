@@ -74,7 +74,7 @@ npm login
 > 版本号一般为3位：x.x.x,每一位对应的含义分别是major主版本号、monor次版本号、patch修订版本号。
 > 所以在打板发布的时候也需要执行不同的命令来进行不同的版本号更新。
 
-如果是第一个版本初始化changelog
+如果是第一个版本，需要根据当前package.json中的版本初始化tag及changelog：
 ```bash
 yarn release:init
 ```
