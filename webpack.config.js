@@ -8,7 +8,7 @@ module.exports = env => {
             path: path.resolve(__dirname, env.lib ? "./lib" : "./dist"),
             publicPath: env.lib ? "/lib/" : "/dist/",
             filename: env.lib ? "vue-directive-kit.js" : "build.js",
-            library: env.lib ? "vie-directive-kit" : "",
+            library: env.lib ? "vue-directive-kit" : "",
             libraryTarget: env.lib ? "umd" : "var",
             umdNamedDefine: env.lib ? true : false,
         },
