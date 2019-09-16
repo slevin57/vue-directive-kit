@@ -27,26 +27,33 @@ TODO: Fill out this long description.
 
 
 ## Install
-安装
+
+**安装**
 ```bash
 npm i vue-directive-kit -D
 # yarn add vue-directive-kit -D
 ```
 
-全局注册
-**ES Module**
+**全局注册**
+</br>
+ES Module
 ```javascript
 import vueDirectiveKit from 'vue-directive-kit';
 Vue.use(vueDirectiveKit);
 ```
 
-**CommonJs**
+CommonJs
 ```javascript
 const {default: vueDirectiveKit} = require('vue-directive-kit')
 Vue.use(vueDirectiveKit)
 ```
 
-****
+Script Link
+```javascript
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-directive-kit@latest/lib/vue-directive-kit.min.js"></script>
+```
+
 
 ## Usage
 
