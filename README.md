@@ -34,10 +34,19 @@ npm i vue-directive-kit -D
 ```
 
 全局注册
+**ES Module**
 ```javascript
 import vueDirectiveKit from 'vue-directive-kit';
 Vue.use(vueDirectiveKit);
 ```
+
+**CommonJs**
+```javascript
+const {default: vueDirectiveKit} = require('vue-directive-kit')
+Vue.use(vueDirectiveKit)
+```
+
+****
 
 ## Usage
 

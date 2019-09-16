@@ -14,12 +14,11 @@
         "vue-img-placeholder"
     ],
     "files": [
-        "dist/vue-directive-kit.js",
+        "lib/vue-directive-kit.js",
         "package.json",
-        "README.md",
-        "yarn.lock"
+        "README.md"
     ],
-    "main": "dist/vue-directive-kit.js",
+    "main": "lib/vue-directive-kit.js",
     "repository": {
         "type": "git",
         "url": "git@github.com:slevin57/vue-directive-kit.git"
