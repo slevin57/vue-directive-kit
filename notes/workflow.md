@@ -75,28 +75,30 @@ npm login
 > 版本号一般为3位：x.x.x,每一位对应的含义分别是major主版本号、monor次版本号、patch修订版本号。
 > 所以在打板发布的时候也需要执行不同的命令来进行不同的版本号更新。
 
-如果是日常更新修订版本号，直接通过`yarn release`执行`shelljs`文件即可，这个文件会自动执行从更新版本号、同步代码/tag到发布npm的一系列操作。
+如果是日常更新修订版本号，直接通过`npm run release`执行`shelljs`文件即可，这个文件会自动执行从更新版本号、同步代码/tag到发布npm的一系列操作。
 
-而如果是第一个版本或者更新主版本或者次版本号，执行完下面的命令会自动更新版本及同步代码，但需要再手动执行`npm publish`发布到npm。
+> 这里不能用`yarn`来执行，因为涉及到`npm publish`的发布操作。
+
+而如果是第一个版本或者更新主版本或者次版本号,则需要另外执行。
 
 如果是第一个版本，需要根据当前package.json中的版本初始化tag及changelog：
 ```bash
-yarn release:init
+npm release:init
 ```
 
 更新修订版本号(最常用):
 ```
-yarn release:p
+npm release:p
 ```
 
 更新次版本号:
 ```
-yarn release:n
+npm release:n
 ```
 
 更新主版本号:
 ```
-yarn release:j
+npm release:j
 ```
 
 上面的命令会执行如下操作：
