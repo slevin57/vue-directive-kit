@@ -32,10 +32,10 @@
     "changelog-init": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add .",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add .",
     "commit": "git cz",
-    "release:init": "standard-version --first-release && git push --follow-tags",
-    "release:p": "standard-version --release-as patch && git push --follow-tags",
-    "release:n": "standard-version --release-as minor && git push --follow-tags",
-    "release:j": "standard-version --release-as major && git push --follow-tags",
+    "release:init": "standard-version --first-release && git push --follow-tags && npm publish",
+    "release:p": "standard-version --release-as patch && git push --follow-tags && npm publish",
+    "release:n": "standard-version --release-as minor && git push --follow-tags && npm publish",
+    "release:j": "standard-version --release-as major && git push --follow-tags && npm publish",
     "release": "node ./shelljs.js"
   },
   "dependencies": {
