@@ -1,12 +1,10 @@
 // 引入指令文件
-import directive1 from "./test-directive/src/test-directive";
 import infiniteScroll from "./infinite-scroll/src/infinite-scroll";
 import imgPlaceholder from "./img-placeholder/src/img-placeholder";
 import imgLazyload from "./img-lazyload/src/img-lazyload";
 
 // 存储指令列表
 const directives = [
-    directive1,
     infiniteScroll,
     imgPlaceholder,
     imgLazyload,
@@ -30,7 +28,6 @@ export default {
     // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
     install,
     // 以下是具体的指令列表
-    directive1,
     infiniteScroll,
     imgPlaceholder,
     imgLazyload,

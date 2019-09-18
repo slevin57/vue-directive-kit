@@ -58,20 +58,44 @@ Script Link
 ## Usage
 
 ### imgLazyload
+图片懒加载。当图片出现在浏览器视口才会加载。
 
 ```html
 <img v-img-lazyload="imgSrc">
 ```
 
 ### imgPlaceholder
+在图片加载完成前以占位内容过渡。支持以**随机色**或者**指定图片**占位。
 
+指令默认作用于`<img>`标签。也可作用于其他普通元素标签，也就是图片显示为元素背景图，只需为指令添加修饰符`bg`即可。
+
+作用于`<img>`标签：
+```html
+<img v-img-placeholder="'http://api.dujin.org/bing/1920.php'" alt="">
 ```
 
+作用于元素：
+```html
+<div v-img-placeholder.bg="'http://api.dujin.org/bing/1920.php'"> </div>
+```
+
+若要以指定图片占位，需要传入一个字符串数组，数组第一项是图片地址，第二项是展位图地址。
+
+作用于`<img>`标签：
+```html
+<img v-img-placeholder="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" alt="">
+```
+
+作用于元素：
+```html
+<div v-img-placeholder.bg="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" ></div>
 ```
 
 ### infiniteScroll
+监听滚动事件并处罚指定事件。可监听window的滚动事件或者指定元素的滚动事件。
+
 监听window的滚动事件
-```vue
+```html
 <template>
     <div>
         <div class="wrapper" v-infinite-scroll="loadDataOpt">
@@ -100,8 +124,8 @@ export default {
 </script>
 ```
 
-监听指定元素的滚动事件
-```vue
+监听指定元素的滚动事件。
+```html
 <template>
     <div>
         <div class="wrapper" ref='wrapper'>
