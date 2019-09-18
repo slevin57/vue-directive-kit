@@ -2,39 +2,75 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.0.7](https://github.com/slevin57/vue-directive-kit/compare/v1.0.6...v1.0.7) (2019-09-16)
-
-
-### Bug Fixes
-
-* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
-
-### [1.0.6](https://github.com/slevin57/vue-directive-kit/compare/v1.0.5...v1.0.6) (2019-09-16)
-
-
-### Bug Fixes
-
-* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
-
-### [1.0.5](https://github.com/slevin57/vue-directive-kit/compare/v1.0.4...v1.0.5) (2019-09-16)
-
-### [1.0.4](https://github.com/slevin57/vue-directive-kit/compare/v1.0.3...v1.0.4) (2019-09-16)
+### [1.0.6](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.6) (2019-09-18)
 
 
 ### Bug Fixes
 
 * some bugs ([0bf19a8](https://github.com/slevin57/vue-directive-kit/commit/0bf19a8))
+* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
+* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
 
-### [1.0.3](https://github.com/slevin57/vue-directive-kit/compare/v1.0.2...v1.0.3) (2019-09-12)
 
-### [1.0.2](https://github.com/slevin57/vue-directive-kit/compare/v1.0.1...v1.0.2) (2019-09-12)
+### Features
 
-### [1.0.1](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.1) (2019-09-12)
+* **v-img-placeholder:** 完善图片加载过程的占位功能 ([5dc9e7a](https://github.com/slevin57/vue-directive-kit/commit/5dc9e7a))
+
+### [1.0.5](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.5) (2019-09-18)
 
 
 ### Bug Fixes
 
-* **package.json:** 修复release参数 ([bd51df8](https://github.com/slevin57/vue-directive-kit/commit/bd51df8))
+* some bugs ([0bf19a8](https://github.com/slevin57/vue-directive-kit/commit/0bf19a8))
+* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
+* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
+
+
+### Features
+
+* **v-img-placeholder:** 完善图片加载过程的占位功能 ([5dc9e7a](https://github.com/slevin57/vue-directive-kit/commit/5dc9e7a))
+
+### [1.0.4](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.4) (2019-09-18)
+
+
+### Bug Fixes
+
+* some bugs ([0bf19a8](https://github.com/slevin57/vue-directive-kit/commit/0bf19a8))
+* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
+* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
+
+
+### Features
+
+* **v-img-placeholder:** 完善图片加载过程的占位功能 ([5dc9e7a](https://github.com/slevin57/vue-directive-kit/commit/5dc9e7a))
+
+### [1.0.3](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.3) (2019-09-18)
+
+
+### Bug Fixes
+
+* some bugs ([0bf19a8](https://github.com/slevin57/vue-directive-kit/commit/0bf19a8))
+* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
+* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
+
+
+### Features
+
+* **v-img-placeholder:** 完善图片加载过程的占位功能 ([5dc9e7a](https://github.com/slevin57/vue-directive-kit/commit/5dc9e7a))
+
+### [1.0.2](https://github.com/slevin57/vue-directive-kit/compare/v1.0.0...v1.0.2) (2019-09-18)
+
+
+### Bug Fixes
+
+* some bugs ([0bf19a8](https://github.com/slevin57/vue-directive-kit/commit/0bf19a8))
+* **pakcage.json:** 打包文件丢失 ([3d25418](https://github.com/slevin57/vue-directive-kit/commit/3d25418))
+* **webpack.donfig.js:** 修复打包的bug ([96de0c0](https://github.com/slevin57/vue-directive-kit/commit/96de0c0))
+
+
+### Features
+
+* **v-img-placeholder:** 完善图片加载过程的占位功能 ([5dc9e7a](https://github.com/slevin57/vue-directive-kit/commit/5dc9e7a))
 
 ## 1.0.0 (2019-09-11)
 
