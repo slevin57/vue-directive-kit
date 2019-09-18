@@ -5,18 +5,90 @@ export default {
     */
     imgPlaceholder: {
         inserted(el, binding) {
-            let color = Math.floor(100000 + Math.random() * 900000);//生成随机6位数
-            el.style.backgroundColor = `#${color}`;
+            // 随机色
+            const randomColor = `#${Math.floor(100000 + Math.random() * 900000)}`;
 
-            //先把图片隐藏掉
-            el.childNodes[0].style.display = "none";
+            // ==用图片占位==
+            if (Object.prototype.toString.call(binding.value) === "[object Array]"){
+                const targetSrc = binding.value[0];
+                const placeholderSrc = binding.value[1];
+
+                let img = new Image();
+                img.src = targetSrc;
+
+                // 背景图的形式
+                if (binding.modifiers.bg){
+                    el.style.background = `url(${placeholderSrc}) center/cover no-repeat`;
+
+                    img.onload = function () {
+                        el.style.background = `url(${targetSrc}) center/cover no-repeat`;
+                    };
+                } else { // 图片的形式
+                    el.src = placeholderSrc;
+
+                    img.onload = function () {
+                        el.src = targetSrc;
+                    };
+                }
+                return;
+            }
+
+            // ==用随机色占位==
+            el.style.backgroundColor = randomColor;
+
             let img = new Image();
             img.src = binding.value;
-            // 等图片加载完成在显示出来，避免出现图片加载过渡显示的那个阶段
-            // console.log('图片是否加载完:', img.complete);
-            img.onload = () => {
-                el.childNodes[0].style.display = "block";
+
+            img.onload = function () {
+                // 背景图的形式
+                if (binding.modifiers.bg){
+                    el.style.background = `url(${binding.value}) center/cover no-repeat`;
+                } else { // 图片的形式
+                    el.src = binding.value;
+                }
             };
+
+            // // 背景图
+            // if (binding.modifiers.bg){
+            //     if (Object.prototype.toString.call(binding.value)==="[object Array]"){
+            //         el.style.background = `url(${binding.value[1]}) center/cover no-repeat`;
+
+            //         let img = new Image();
+            //         img.src = binding.value[0];
+            //         img.onload = function () {
+            //             el.style.background = `url(${binding.value[0]}) center/cover no-repeat`;
+            //         };
+            //     } else {
+            //         el.style.backgroundColor = randomColor;
+
+            //         let img = new Image();
+            //         img.src = binding.value;
+            //         img.onload = function () {
+            //             el.style.background = `url(${binding.value}) center/cover no-repeat`;
+            //         };
+            //     }
+            //     return;
+            // }
+
+
+            // // 图片
+            // if (Object.prototype.toString.call(binding.value) === "[object Array]") {
+            //     el.src = binding.value[1];
+
+            //     let img = new Image();
+            //     img.src = binding.value[0];
+            //     img.onload = function () {
+            //         el.src = binding.value[0];
+            //     };
+            // } else {
+            //     el.style.backgroundColor = randomColor;//设置随机颜色;
+
+            //     let img = new Image();
+            //     img.src = binding.value;
+            //     img.onload = function () {
+            //         el.src = binding.value;
+            //     };
+            // }
         }
     },
 };

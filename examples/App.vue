@@ -1,15 +1,19 @@
 <template>
     <div id="app">
-        <img src="./assets/logo.png">
-        <h1 v-test-directive>{{ msg }}</h1>
-        <div v-img-placeholder="'http://api.dujin.org/bing/1920.php'">
-            <img
-                src="http://api.dujin.org/bing/1920.php"
-                alt=""
-                class="src">
+        <div v-img-placeholder.bg="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" class="wrapper">
+            背景图-图片
         </div>
-        <div class="img-lazyload">
-            <img v-img-lazyload="'https://resources.laihua.com/2018-10-31/5dedfb80-dcbc-11e8-a1b9-67cb886d5d62.png'" alt="">
+        <div v-img-placeholder.bg="'http://api.dujin.org/bing/1920.php'" class="wrapper">
+            背景图-颜色
+        </div>
+
+        <div class="wrapper">
+            图片-图片
+            <img v-img-placeholder="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" alt="">
+        </div>
+        <div class="wrapper">
+            图片-颜色
+            <img v-img-placeholder="'http://api.dujin.org/bing/1920.php'" alt="">
         </div>
     </div>
 </template>
@@ -27,7 +31,24 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+#app{
+    display: flex;
+}
+.wrapper {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid pink;
+    &>img{
+        width: 160px;
+        height: 160px;
+        display: block;
+
+    }
+}
 #app {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -54,8 +75,5 @@ li {
 
 a {
     color: #42b983;
-}
-.img-lazyload{
-    padding-top: 1000px;
 }
 </style>
