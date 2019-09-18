@@ -1,18 +1,12 @@
 <template>
     <div id="app">
-        <div v-img-placeholder.bg="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" class="wrapper">
-            背景图-图片
-        </div>
-        <div v-img-placeholder.bg="'http://api.dujin.org/bing/1920.php'" class="wrapper">
-            背景图-颜色
-        </div>
+        <div v-img-placeholder.bg="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" class="wrapper"></div>
+        <div v-img-placeholder.bg="'http://api.dujin.org/bing/1920.php'" class="wrapper"> </div>
 
         <div class="wrapper">
-            图片-图片
             <img v-img-placeholder="['http://api.dujin.org/bing/1920.php','https://www.baidu.com/favicon.ico']" alt="">
         </div>
         <div class="wrapper">
-            图片-颜色
             <img v-img-placeholder="'http://api.dujin.org/bing/1920.php'" alt="">
         </div>
     </div>

@@ -1,8 +1,4 @@
 export default {
-    /** @图片加载占位符
-     * 图片加载出来之前，先用随机颜色占位，
-     * 等图片完全加载之后，再显示图片
-    */
     imgPlaceholder: {
         inserted(el, binding) {
             // 随机色
@@ -48,47 +44,6 @@ export default {
                 }
             };
 
-            // // 背景图
-            // if (binding.modifiers.bg){
-            //     if (Object.prototype.toString.call(binding.value)==="[object Array]"){
-            //         el.style.background = `url(${binding.value[1]}) center/cover no-repeat`;
-
-            //         let img = new Image();
-            //         img.src = binding.value[0];
-            //         img.onload = function () {
-            //             el.style.background = `url(${binding.value[0]}) center/cover no-repeat`;
-            //         };
-            //     } else {
-            //         el.style.backgroundColor = randomColor;
-
-            //         let img = new Image();
-            //         img.src = binding.value;
-            //         img.onload = function () {
-            //             el.style.background = `url(${binding.value}) center/cover no-repeat`;
-            //         };
-            //     }
-            //     return;
-            // }
-
-
-            // // 图片
-            // if (Object.prototype.toString.call(binding.value) === "[object Array]") {
-            //     el.src = binding.value[1];
-
-            //     let img = new Image();
-            //     img.src = binding.value[0];
-            //     img.onload = function () {
-            //         el.src = binding.value[0];
-            //     };
-            // } else {
-            //     el.style.backgroundColor = randomColor;//设置随机颜色;
-
-            //     let img = new Image();
-            //     img.src = binding.value;
-            //     img.onload = function () {
-            //         el.src = binding.value;
-            //     };
-            // }
         }
     },
 };
