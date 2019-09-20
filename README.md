@@ -5,18 +5,18 @@
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-TODO: Put more badges here.
+
 
 > A collection of vue directive.
 
-TODO: Fill out this long description.
+各种Vue自定义指令合集。
 
-## Table of Contents
+## 目录
 
 - [vue-directive-kit](#vue-directive-kit)
-  - [Table of Contents](#table-of-contents)
-  - [Install](#install)
-  - [Usage](#usage)
+  - [目录](#%e7%9b%ae%e5%bd%95)
+  - [安装](#%e5%ae%89%e8%a3%85)
+  - [使用](#%e4%bd%bf%e7%94%a8)
     - [imgLazyload](#imglazyload)
     - [imgPlaceholder](#imgplaceholder)
     - [infiniteScroll](#infinitescroll)
@@ -26,7 +26,7 @@ TODO: Fill out this long description.
   - [License](#license)
 
 
-## Install
+## 安装
 
 **安装**
 ```bash
@@ -55,7 +55,7 @@ Script Link
 ```
 
 
-## Usage
+## 使用
 
 ### imgLazyload
 图片懒加载。当图片出现在浏览器视口才会加载。
