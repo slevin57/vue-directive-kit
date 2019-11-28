@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/slevin57/vue-directive-kit/compare/v1.1.5...v1.2.0) (2019-11-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **infinite-scroll.js:** none
+
+### Bug Fixes
+
+* **infinite-scroll.js:** 优化无限滚动加载指令 ([a7546aa](https://github.com/slevin57/vue-directive-kit/commit/a7546aa))
+
+
+### Features
+
+* **follower.js:** 新增鼠标跟随指令 ([b1281f5](https://github.com/slevin57/vue-directive-kit/commit/b1281f5))
+
 ### [1.1.5](https://github.com/slevin57/vue-directive-kit/compare/v1.0.61...v1.1.5) (2019-09-18)
 
 ### [1.1.3](https://github.com/slevin57/vue-directive-kit/compare/v1.1.2...v1.1.3) (2019-09-18)
