@@ -213,7 +213,7 @@ export default {
 
 自定义样式
 
-![自定义样式](examples/assets/img/docs/自定义内容.gif)
+![自定义样式](examples/assets/img/docs/自定义样式.gif)
 
 <details>
 <summary>Show Me Code</summary>
