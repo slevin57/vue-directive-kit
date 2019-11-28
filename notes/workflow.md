@@ -83,22 +83,22 @@ npm login
 
 如果是第一个版本，需要根据当前package.json中的版本初始化tag及changelog：
 ```bash
-npm release:init
+npm run release:init
 ```
 
 更新修订版本号(最常用):
 ```
-npm release:p
+npm run release:p
 ```
 
 更新次版本号:
 ```
-npm release:n
+npm run release:n
 ```
 
 更新主版本号:
 ```
-npm release:j
+npm run release:j
 ```
 
 上面的命令会执行如下操作：
