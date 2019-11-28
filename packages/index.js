@@ -2,12 +2,14 @@
 import infiniteScroll from "./infinite-scroll/src/infinite-scroll";
 import imgPlaceholder from "./img-placeholder/src/img-placeholder";
 import imgLazyload from "./img-lazyload/src/img-lazyload";
+import follower from "./follower/src/follower";
 
 // 存储指令列表
 const directives = [
     infiniteScroll,
     imgPlaceholder,
     imgLazyload,
+    follower,
 ];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
@@ -31,4 +33,5 @@ export default {
     infiniteScroll,
     imgPlaceholder,
     imgLazyload,
+    follower,
 };

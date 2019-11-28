@@ -5,6 +5,7 @@ import App from "./App.vue";
 // import pgkName from '../packages/test-directive/index'
 // 整体引入
 import vueDirectiveKit from "../packages/index";
+console.log("vueDirectiveKit:", vueDirectiveKit);
 Vue.use(vueDirectiveKit);
 
 

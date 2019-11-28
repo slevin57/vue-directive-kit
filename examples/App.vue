@@ -9,6 +9,9 @@
         <div class="wrapper">
             <img v-img-placeholder="'http://api.dujin.org/bing/1920.php'" alt="">
         </div>
+
+        <!-- f-follower -->
+        <div v-follower="options" class="wrapper">case： v-follower</div>
     </div>
 </template>
 
@@ -19,7 +22,13 @@ export default {
     },
     data() {
         return {
-            msg: "Welcome to Your Vue.js App"
+            options:{
+                txt: "自定义样式",
+                style:{
+                    "backgroundColor": "#38f",
+                    "color": "#fff",
+                }
+            }
         };
     }
 };
