@@ -5,28 +5,29 @@
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-TODO: Put more badges here.
+
 
 > A collection of vue directive.
 
-TODO: Fill out this long description.
+各种Vue自定义指令合集。
 
-## Table of Contents
+## 目录
 
 - [vue-directive-kit](#vue-directive-kit)
-  - [Table of Contents](#table-of-contents)
-  - [Install](#install)
-  - [Usage](#usage)
+  - [目录](#%e7%9b%ae%e5%bd%95)
+  - [安装](#%e5%ae%89%e8%a3%85)
+  - [使用](#%e4%bd%bf%e7%94%a8)
     - [imgLazyload](#imglazyload)
     - [imgPlaceholder](#imgplaceholder)
     - [infiniteScroll](#infinitescroll)
+    - [鼠标跟随](#%e9%bc%a0%e6%a0%87%e8%b7%9f%e9%9a%8f)
   - [API](#api)
   - [Maintainers](#maintainers)
   - [Contributing](#contributing)
   - [License](#license)
 
 
-## Install
+## 安装
 
 **安装**
 ```bash
@@ -55,7 +56,7 @@ Script Link
 ```
 
 
-## Usage
+## 使用
 
 ### imgLazyload
 图片懒加载。当图片出现在浏览器视口才会加载。
@@ -95,6 +96,9 @@ Script Link
 监听滚动事件并处罚指定事件。可监听window的滚动事件或者指定元素的滚动事件。
 
 监听window的滚动事件
+<details>
+<summary>Show Me Code</summary>
+
 ```html
 <template>
     <div>
@@ -123,8 +127,14 @@ export default {
 }
 </script>
 ```
+</details>
+
 
 监听指定元素的滚动事件。
+
+<details>
+<summary>Show Me Code</summary>
+
 ```html
 <template>
     <div>
@@ -154,6 +164,82 @@ export default {
 }
 </script>
 ```
+</details>
+
+### 鼠标跟随
+
+在指令作用的元素范围内，生成一个鼠标跟随的元素。
+可自定义元素样式及元素内容。
+
+基本用法
+
+![基本用法](examples/assets/img/docs/默认.gif)
+
+<details>
+<summary>Show Me Code</summary>
+
+```html
+<div v-follower>case： v-follower</div>
+```
+</details>
+
+
+自定义提示内容
+
+![自定义内容](examples/assets/img/docs/自定义内容.gif)
+
+<details>
+<summary>Show Me Code</summary>
+
+```js
+<template>
+    <div v-follower="options">case： v-follower</div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            options:{
+                txt: "自定义内容"
+            }
+        };
+    }
+};
+</script>
+```
+</details>
+
+
+自定义样式
+
+![自定义样式](examples/assets/img/docs/自定义内容.gif)
+
+<details>
+<summary>Show Me Code</summary>
+
+```js
+<template>
+    <div v-follower="options">case： v-follower</div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            options:{
+                txt: "自定义样式",
+                style:{
+                    "backgroundColor": "#38f",
+                    "color": "#fff",
+                }
+            }
+        };
+    }
+};
+</script>
+```
+</details>
 
 
 ## API
@@ -173,3 +259,11 @@ Small note: If editing the README, please conform to the [standard-readme](https
 ## License
 
 MIT © 2019 slevin
+
+
+
+<details>
+<summary>Show Me Code</summary>
+
+code..
+</details>
